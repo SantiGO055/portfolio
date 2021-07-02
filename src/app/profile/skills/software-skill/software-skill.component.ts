@@ -46,6 +46,10 @@ export class SoftwareSkillComponent implements OnInit {
         skillName: "PHP",
         fontAwesomeClassname: "fab fa-php"
       },
+      {
+        skillName: "PHP",
+        fontAwesomeClassname: "fab fa-php"
+      },
       
       // {
       //   skillName: "Tensorflow",
