@@ -9,6 +9,7 @@ import { GithubCalendarComponent } from './profile/github-calendar/github-calend
 import { ProfileModule } from './profile/profile.module';
 import { GithubRepoCardComponent } from './profile/projects/github-repo-card/github-repo-card.component';
 import { GraphQLModule } from './profile/projects/graphql.module';
+import { RecaptchaFormsModule, RecaptchaModule, ReCaptchaV3Service, RecaptchaV3Module, RECAPTCHA_V3_SITE_KEY  } from 'ng-recaptcha';
 
 
 @NgModule({
@@ -24,9 +25,17 @@ import { GraphQLModule } from './profile/projects/graphql.module';
     
     HttpClientModule,
     GraphQLModule,
-    AnimateModule
+    AnimateModule,
+    RecaptchaFormsModule,
+    
+    RecaptchaModule,
+    RecaptchaV3Module
+    
+    
+    
+    
   ],
-  providers: [],
+  providers: [ReCaptchaV3Service],
   bootstrap: [AppComponent],
 })
 export class AppModule { }

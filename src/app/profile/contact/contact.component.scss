@@ -1,5 +1,6 @@
 .contact-div-main {
     display: flex;
+    
   }
   
   .subTitle {
@@ -87,4 +88,53 @@
       display: none;
     }
   }
-  
+  .main-button {
+    background-color: #55198b;
+    border: solid 1px #55198b;
+    color: white;
+    font-weight: 700;
+    width: max-content;
+    padding: 13px 22px;
+    margin-right: 50px;
+    text-transform: uppercase;
+    border-radius: 6px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    margin-top: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all .3s ease-in-out 0s;
+  }
+  .main-button:hover {
+    background-color: #ffffff;
+    color: black;
+    transition: all .3s ease 0s;
+    transform: translateY(-3px);
+  }
+@media (max-width: 768px) {
+    .main-button {
+      font-size: 15px;
+      padding: 12px 18px;
+      margin-right: 0px;
+    }
+    .greeting-text{
+      font-size: 35px;
+      font-weight: 700;
+    }
+  }
+  @media (max-width: 320px) {
+    .main-button {
+      font-size: 12px;
+    }
+  }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}

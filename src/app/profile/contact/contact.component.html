@@ -13,51 +13,59 @@
           <app-social-media></app-social-media>
         </div>
       </div>
-  <!--      <div >-->
-  <!--&lt;!&ndash;      <img src="../../assets/images/contactMail.webp" class="contact-image">&ndash;&gt;-->
-  <!--      </div>-->
-  <div [formGroup]="formGroup" novalidate>
-      
-    <div class="row">
-        <div class="col-md-6 mb-3">
-           
-            <input type="text" placeholder="Nombre" name="nombre" class="form-control" id="nombre" formControlName="nombre"/>
-            <small class="invalid" *ngIf="formGroup.get('nombre')?.errors?.required && formGroup.get('nombre')?.touched">Nombre requerido</small>
-            
-        </div>
-    </div>
-
-    <div class="row">
-
-        <div class="col-md-6 mb-3">
-            <input type="number" placeholder="Celular" name="telefono" class="form-control" id="telefono" formControlName="telefono"/>
-            <!-- <small class="invalid" *ngIf="formGroup.get('telefono')?.errors?.required && formGroup.get('telefono')?.touched">Edad requerida</small> -->
-            <small class="invalid" *ngIf="formGroup.get('telefono')?.errors?.min || formGroup.get('telefono')?.errors?.max && formGroup.get('telefono')?.touched
-            ">Celular incorrecto</small>
-            
-        </div>
-        <div class="col-md-6 mb-3">
-            
-        
-        </div>
-    </div>
-    <div class="row">
-
+      <!--      <div >-->
+      <!--&lt;!&ndash;      <img src="../../assets/images/contactMail.webp" class="contact-image">&ndash;&gt;-->
+      <!--      </div>-->
+      <form [formGroup]="formGroup" novalidate (ngSubmit)="enviarMail()">
         <div>
-            <input type="text" placeholder="Mail" name="email" class="form-control" id="email" formControlName="email"/>
-            <small class="invalid" *ngIf="formGroup.get('email')?.errors?.required && formGroup.get('email')?.touched">Mail requerido</small>
-            <small class="invalid" *ngIf="formGroup.get('email')?.errors?.email && formGroup.get('email')?.touched">Mail incorrecto</small>
-    
+
+          <div class="row">
+              <div class="col-md-6 mb-3">
+                
+                  <input type="text" placeholder="Nombre *" name="nombre" class="form-control" id="nombre" formControlName="nombre"/>
+                  <small class="invalid" *ngIf="formGroup.get('nombre')?.errors?.required && formGroup.get('nombre')?.touched">Nombre requerido</small>
+                  
+              </div>
+          </div>
+
+          <div class="row">
+
+              <div class="col-md-6 mb-3">
+                  <input type="text" placeholder="Email *" name="email" class="form-control" id="email" formControlName="email"/>
+                  <small class="invalid" *ngIf="formGroup.get('email')?.errors?.required && formGroup.get('email')?.touched">Mail requerido</small>
+                  <small class="invalid" *ngIf="formGroup.get('email')?.errors?.email && formGroup.get('email')?.touched">Mail incorrecto</small>
+          
+              </div>
+          </div>
+          <div class="row">
+
+            <div class="col-md-6 mb-3">
+                <input type="textarea" placeholder="Comentario *" name="texto" class="form-control" id="texto" formControlName="texto"/>
+                <small class="invalid" *ngIf="formGroup.get('texto')?.errors?.required && formGroup.get('texto')?.touched">Comentario requerido</small>
+        
+            </div>
+          </div>
+          <div class="row">
+
+            <div class="col-md-6 mb-3">
+                <input type="number" placeholder="Tel de contacto" name="telefono" class="form-control" id="telefono" formControlName="telefono"/>
+                <!-- <small class="invalid" *ngIf="formGroup.get('telefono')?.errors?.required && formGroup.get('telefono')?.touched">Edad requerida</small> -->
+                
+            </div>
+            
+          </div>
+
+            <re-captcha class="captcha"
+              formControlName="captcha"
+              name="captcha"
+              required
+              siteKey="6Leu2wUbAAAAABT5uSUdeAQEg4BLbKkoeKJR7LNm"
+            ></re-captcha>
+          
+            <button class="main-button" type="submit" [disabled]="formGroup.invalid">Enviar</button>
         </div>
-    </div>
-    <!-- <re-captcha class="captcha"
-                    formControlName="captcha"
-                    name="captcha"
-                    required
-                    siteKey="6Leu2wUbAAAAABT5uSUdeAQEg4BLbKkoeKJR7LNm"
-                ></re-captcha> -->
-                <button class="botonSubmit" type="submit" [disabled]="formGroup.invalid">Enviar</button>
-</div>
+
+      </form>
     </div>
   </div>
   
