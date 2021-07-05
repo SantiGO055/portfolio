@@ -12,7 +12,7 @@ export class SocialMediaComponent implements OnInit {
 
     github: "https://github.com/santigo055",
     linkedin: "https://www.linkedin.com/in/santiago-gonzalez-953997b0/",
-    gmail: "sharthak31@gmail.com",
+    gmail: "mailto:santigonzalez05@gmail.com",
   };
   ngOnInit(): void {
   }
