@@ -19,12 +19,12 @@ export class ExperienceComponent implements OnInit {
         desc: "Operador de soporte técnico nivel 1 a clientes residenciales",
       },
       {
-        role: "Field Support",
+        role: "Field Support / Dev JR",
         company: "Mega Tech S.A",
         color: "#ff9102",
         companylogo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvSr4hYDWZhTW7ep7g5HWnnbtD5QcF4pchw_WoYp4sNnYq6KLmogLQt9jO7_0-QJWsbIY&usqp=CAU",
         date: "Jun 2016 - Presente",
-        desc: "Realizando Soporte técnico onsite a cliente La Caja de ahorro y seguros S.A",
+        desc: "Realizando Soporte técnico onsite y proyectos de desarrollo de aplicaciones moviles con ionic, angular y node js utilizando mongodb",
         },
     ]
   };
