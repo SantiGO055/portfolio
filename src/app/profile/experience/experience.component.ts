@@ -23,9 +23,17 @@ export class ExperienceComponent implements OnInit {
         company: "Mega Tech S.A",
         color: "#ff9102",
         companylogo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvSr4hYDWZhTW7ep7g5HWnnbtD5QcF4pchw_WoYp4sNnYq6KLmogLQt9jO7_0-QJWsbIY&usqp=CAU",
-        date: "Jun 2016 - Presente",
+        date: "Jun 2016 - Oct 2021",
         desc: "Realizando Soporte técnico onsite",
-        },
+      },
+      {
+        role: "Fullstack Developer",
+        company: "Mega Tech S.A",
+        color: "#ff9102",
+        companylogo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvSr4hYDWZhTW7ep7g5HWnnbtD5QcF4pchw_WoYp4sNnYq6KLmogLQt9jO7_0-QJWsbIY&usqp=CAU",
+        date: "Oct 2021 - Presente",
+        desc: "Desarrollo de chatbot web (js, html, css) y Android nativo en kotlin",
+      },
     ]
   };
 
