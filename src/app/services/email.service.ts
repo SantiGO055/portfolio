@@ -19,7 +19,7 @@ export class EmailService {
       message: mensaje,
 
     }
-    emailjs.send('service_8nbxk1x', 'template_vumatvl', templateParams)
+    emailjs.send('service_m9mft6l', 'template_pv8xmeg', templateParams)
     .then((result: EmailJSResponseStatus) => {
 
       console.log(result.text);

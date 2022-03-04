@@ -43,12 +43,6 @@ export class ContactComponent implements OnInit {
     this.emailjs.sendEmail(mensaje,email,nombre,telefono);
 
   }
-  prueba(){
-    console.log(this.formGroup)
-
-
-    
-  }
     
 
 }
