@@ -7,7 +7,7 @@ import { AlertService } from 'src/app/services/alert.service';
 export class EmailService {
 
   
-  constructor(private alert :AlertService) {
+  constructor(private alertaSvc :AlertService) {
     init("eH3QUVJEFCjU25omp");
    }
 
@@ -22,11 +22,11 @@ export class EmailService {
     }
     emailjs.send('service_m9mft6l', 'template_pv8xmeg', templateParams)
     .then((result: EmailJSResponseStatus) => {
-      alert.mostraAlertaSimpleSuccess("Mensaje enviado correctamente","Enviado!");
-      alert.mostrarAlertaSimpleError("El mensaje no se pudo enviar, intentá de nuevo en unos minutos");
+      alertaSvc.mostraAlertaSimpleSuccess("Mensaje enviado correctamente","Enviado!");
+      alertaSvc.mostrarAlertaSimpleError("El mensaje no se pudo enviar, intentá de nuevo en unos minutos");
       console.log(result.text);
     }, (error) => {
-      alert.mostrarAlertaSimpleError("El mensaje no se pudo enviar, intentá de nuevo en unos minutos");
+      alertaSvc.mostrarAlertaSimpleError("El mensaje no se pudo enviar, intentá de nuevo en unos minutos");
       console.log(error.text);
     });
   }
