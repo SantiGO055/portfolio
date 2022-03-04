@@ -39,6 +39,9 @@ export class ContactComponent implements OnInit {
     let email = this.formGroup.get('email')?.value;
     let nombre = this.formGroup.get('nombre')?.value;
     let telefono = this.formGroup.get('telefono')?.value;
+    if(mensaje && email && nombre && telefono){
+      this.formGroup.reset()
+    }
 
     this.emailjs.sendEmail(mensaje,email,nombre,telefono);
 
