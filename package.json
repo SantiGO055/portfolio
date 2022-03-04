@@ -11,6 +11,7 @@
   },
   "private": true,
   "dependencies": {
+    "sweetalert2": "^11.0.0",
     "@angular/animations": "~11.2.13",
     "@angular/cdk": "^10.1.0",
     "@angular/common": "~11.2.13",
