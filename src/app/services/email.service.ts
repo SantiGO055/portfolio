@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import emailjs, { EmailJSResponseStatus, init } from 'emailjs-com';
-import { AlertService } from 'src/app/services/alert.service';
+import { AlertService } from './alert.service';
 @Injectable({
   providedIn: 'root'
 })
