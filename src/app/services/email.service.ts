@@ -7,7 +7,7 @@ export class EmailService {
 
   
   constructor() {
-    init("user_qOzALb8QuxtW7Iy9808vc");
+    init("eH3QUVJEFCjU25omp");
    }
 
 
