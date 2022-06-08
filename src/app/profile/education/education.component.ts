@@ -19,7 +19,7 @@ export class EducationComponent implements OnInit {
       heading: "Técnico universitario en programación",
       duration: "2021",
       subtitle: "UTN, Avellaneda",
-      content: "Terminando la carrera de tecnico en programación",
+      content: "Me recibí de Técnico Universitario Programador",
       className1: "mar-right",
       className2: "prt_about_learnbox_left"
     },
@@ -39,7 +39,7 @@ export class EducationComponent implements OnInit {
       className1: "mar-right",
       className2: "prt_about_learnbox_left"
     }
-    ];
+  ];
   constructor() { }
 
   ngOnInit(): void {
