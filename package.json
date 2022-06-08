@@ -11,7 +11,6 @@
   },
   "private": true,
   "dependencies": {
-    "sweetalert2": "^11.0.0",
     "@angular/animations": "~11.2.13",
     "@angular/cdk": "^10.1.0",
     "@angular/common": "~11.2.13",
@@ -34,12 +33,13 @@
     "emailjs": "^3.4.0",
     "emailjs-com": "^2.6.4",
     "graphql": "^15.5.1",
+    "ng-recaptcha": "^8.0.0",
     "ngx-spinner": "^12.0.0",
     "popper.js": "^1.16.1",
     "rxjs": "~6.6.0",
+    "sweetalert2": "^11.0.0",
     "tslib": "^2.0.0",
-    "zone.js": "~0.11.3",
-    "ng-recaptcha": "^8.0.0"
+    "zone.js": "~0.11.3"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.1102.12",
