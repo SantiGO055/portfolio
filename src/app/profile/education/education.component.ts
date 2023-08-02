@@ -16,6 +16,14 @@ export class EducationComponent implements OnInit {
     //   className2: "prt_about_learnbox_right"
     // },
     {
+      heading: "Estudiante de inglés",
+      duration: "2022",
+      subtitle: "AACI - Asociacion Argentina de Cultura Inglesa",
+      content: "Nivel B1 - Senior 3",
+      className1: "mar-left",
+      className2: "prt_about_learnbox_right"
+    },
+    {
       heading: "Técnico universitario en programación",
       duration: "2021",
       subtitle: "UTN, Avellaneda",
