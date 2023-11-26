@@ -12,7 +12,7 @@ export class GreetingComponent implements OnInit {
     username: "Santiago Gonzalez",
     title: "Hola, soy Santiago",
     subTitle: "Un apasionado programador 🚀 con experiencia construyendo aplicaciones web y mobile con javascript, Angular Js, Ionic y muchas mas librerias y frameworks",
-    resumeLink: "https://drive.google.com/drive/folders/1MzMNp9FLA1b-g8r3JhRUaDxa_z9fXhVX"
+    resumeLink: "https://drive.google.com/file/d/1zDGzPVABrco_chXIOSBYFYlQObo02YjD/view?usp=sharing"
   }
   ngOnInit(): void {
   }
