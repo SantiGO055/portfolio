@@ -48,8 +48,8 @@ export class SoftwareSkillComponent implements OnInit {
       },
       
       // {
-      //   skillName: "Tensorflow",
-      //   fontAwesomeClassname: "logos-tensorflow"
+      //   skillName: ".NET",
+      //   fontAwesomeClassname: "fa fa-csharp"
       // },
       // {
       //   skillName: "Firebase",
