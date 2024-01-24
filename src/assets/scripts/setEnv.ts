@@ -42,6 +42,7 @@ const environmentFileContent = `
   };
 `;
 
-writeFileUsingFS(targetPath, environmentFileContent);
+writeFileUsingFS('./src/environments/environment.prod.ts', environmentFileContent);
+writeFileUsingFS('./src/environments/environment.ts', environmentFileContent);
 
 /* tslint:enable */
