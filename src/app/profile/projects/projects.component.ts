@@ -68,7 +68,7 @@ export class ProjectsComponent implements OnInit {
       `
     }).subscribe((data) => {
       this.projects2 = data.data.user.pinnedItems.edges;
-      console.log(this.projects2);
+      //console.log(this.projects2);
     });
   }
 
