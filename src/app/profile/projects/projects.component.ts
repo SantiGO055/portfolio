@@ -39,7 +39,7 @@ export class ProjectsComponent implements OnInit {
     this.apollo.query<any>({
       query: gql`
       {
-      user(login: "sarthakgoenka") {
+      user(login: "santigo055") {
         pinnedItems(first: 6, types: [REPOSITORY]) {
           totalCount
           edges {
@@ -68,7 +68,7 @@ export class ProjectsComponent implements OnInit {
       `
     }).subscribe((data) => {
       this.projects2 = data.data.user.pinnedItems.edges;
-      // console.log(this.projects2);
+      //console.log(this.projects2);
     });
   }
 

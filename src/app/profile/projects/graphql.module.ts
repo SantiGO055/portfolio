@@ -5,7 +5,7 @@ import {InMemoryCache} from 'apollo-cache-inmemory';
 import { setContext } from 'apollo-link-context';
 import { ApolloLink } from 'apollo-link';
 import { HttpClientModule, HttpHeaders } from '@angular/common/http';
-
+import { environment } from 'src/environments/environment';
 const uri = 'https://api.github.com/graphql'; // <-- add the URL of the GraphQL server here
 
 export function provideApollo(httpLink: HttpLink) {
@@ -14,7 +14,7 @@ export function provideApollo(httpLink: HttpLink) {
       Accept: 'charset=utf-8'
     }
   }));
-  const token = ""; //Your github token here
+  const token = environment.token; //Your github token here
   const auth = setContext((operation, context) => ({
     headers: {
       Authorization: `Bearer ${token}`
