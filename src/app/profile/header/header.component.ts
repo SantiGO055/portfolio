@@ -46,7 +46,14 @@ export class HeaderComponent implements OnInit {
   
   constructor() { }
   greeting= {
+<<<<<<< HEAD
     username: "Santiago Gonzalez"
+=======
+    username: "Santiago Gonzalez",
+    title: "Hola, soy Santiago",
+    subTitle: "Un apasionado programador 🚀 con experiencia construyendo aplicaciones web y mobile con javascript, Angular Js, Ionic y muchas mas librerias y frameworks",
+    resumeLink: "https://drive.google.com/file/d/10SHhyGdYsQs6pEbDdQvgCS-KmPSZKSl0/view"
+>>>>>>> 06b615283d6d2930191bd09afa9f2e605903c37a
   }
   ngOnInit(): void {
   }
